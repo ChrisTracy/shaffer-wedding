@@ -75,6 +75,14 @@
   .flipTimebox .flip-clock-meridium {
     font-size: 18px !important;
   }
+  .flipTimebox {
+    margin: 0 auto;
+    width: auto;
+}
+.flipTimebox .flip-clock-wrapper {
+    padding: 0;
+    width: 100%; /* Or a specific max-width that fits smaller screens */
+}
 }
 @media screen and (max-width: 480px) {
   .flipTimemodulesboxes {
@@ -116,6 +124,14 @@
   .flipTimebox {
     margin: 50px 0 100px 20px;
   }
+  .flipTimebox {
+    margin: 0 auto;
+    width: auto;
+}
+.flipTimebox .flip-clock-wrapper {
+    padding: 0;
+    width: 100%; /* Or a specific max-width that fits smaller screens */
+}
 }
 @media screen and (max-width: 360px) {
   .flipTimebox .flip-clock-divider .flip-clock-label {
@@ -150,6 +166,14 @@
   .flipTimebox {
     margin: 50px 0 100px 20px;
   }
+  .flipTimebox {
+    margin: 0 auto;
+    width: auto;
+}
+.flipTimebox .flip-clock-wrapper {
+    padding: 0;
+    width: 100%; /* Or a specific max-width that fits smaller screens */
+}
 }
 @media screen and (max-width: 320px) {
   .flipTimebox .flip-clock-wrapper {
@@ -177,6 +201,14 @@
   .flipTimebox .flip-clock-divider.seconds .flip-clock-label {
     right: 14px;
   }
+  .flipTimebox {
+    margin: 0 auto;
+    width: auto;
+}
+.flipTimebox .flip-clock-wrapper {
+    padding: 0;
+    width: 100%; /* Or a specific max-width that fits smaller screens */
+}
 }
 
 .flip-clock-wrapper {
@@ -188,4 +220,13 @@
   font-size: 14px !important;
   font-weight: bold !important;
   font-family: Sofia Sans Condensed !important; 
+}
+
+.flipTimebox {
+  margin: 0 auto;
+  width: auto;
+}
+.flipTimebox .flip-clock-wrapper {
+  padding: 0;
+  width: 100%; /* Or a specific max-width that fits smaller screens */
 }
