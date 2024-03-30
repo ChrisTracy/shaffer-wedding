@@ -1512,6 +1512,7 @@ form label {
   height: 25px;
   cursor: pointer;
   text-decoration: none;
+  display: none !important;
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
   background: #444;
@@ -1519,6 +1520,7 @@ form label {
 .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
   outline: none;
   border-bottom: none !important;
+  display: none !important;
 }
 .fh5co-nav-toggle i {
   position: relative;
