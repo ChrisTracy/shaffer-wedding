@@ -884,11 +884,11 @@ form label {
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
-  padding: 20px 20px;
+  padding: 10px 40px;
   background: #fff !important;
-  color: #646464;
+  color: #BC804d;
   border: none !important;
-  font-size: 16px;
+  font-size: 28px;
   font-family: Sofia Sans Condensed;
   text-transform: uppercase;
 }
@@ -1512,7 +1512,6 @@ form label {
   height: 25px;
   cursor: pointer;
   text-decoration: none;
-  display: none !important;
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
   background: #444;
@@ -1520,7 +1519,6 @@ form label {
 .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
   outline: none;
   border-bottom: none !important;
-  display: none !important;
 }
 .fh5co-nav-toggle i {
   position: relative;
@@ -1613,7 +1611,7 @@ form label {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Work Sans", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;

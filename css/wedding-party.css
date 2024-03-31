@@ -1,0 +1,61 @@
+#fh5co-header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-content {
+    margin-top: -3em; /* Adjust this value as needed to position your header content correctly */
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 48px;
+    font-family: "Amsterdam", Arial, serif
+}
+
+.overlay {
+    position: relative; /* If not already positioned */
+    z-index: 1; /* Lower than the .display-tc */
+}
+
+
+.display-tc {
+    position: relative;
+    z-index: 2; /* Higher than the overlay */
+}
+
+/* Center text within the caption */
+.thumbnail .caption {
+    text-align: center;
+}
+
+/* Round the corners of the thumbnail boxes */
+div.thumbnail {
+    border-radius: 10px; /* Adjust the radius as needed */
+    background-color: transparent;
+    overflow: hidden; /* Ensures the image follows the border radius */
+    border: 5px solid #cb804d;
+}
+
+/* Additional styling for the name */
+.thumbnail .caption h3 {
+    margin-top: 10px; /* Adjust space above the name */
+    margin-bottom: 5px; /* Adjust space below the name */
+}
+
+/* Styling for the paragraphs for consistent spacing */
+.thumbnail .caption p {
+    margin-bottom: 10px; /* Adjust bottom margin for paragraphs */
+}
+
+.wp-image
+{
+    padding-top: 20px;
+}
