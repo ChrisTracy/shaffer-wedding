@@ -1138,7 +1138,6 @@ form label {
 }
 .fh5co-heading h2 {
   font-size: 60px;
-  margin-bottom: 50px;
   line-height: 1.5;
   font-weight: bold;
   color: #0c3c48;
@@ -1805,3 +1804,6 @@ form label {
 
 /*# sourceMappingURL=style.css.map */
 
+.padding-above {
+  padding-top: 50px; /* Adjust the value as needed */
+}
