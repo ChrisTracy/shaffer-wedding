@@ -1609,8 +1609,6 @@ form label {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Work Sans", Arial, sans-serif;
-  font-size: 30px;
   font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -1619,7 +1617,14 @@ form label {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 8px 20px;
+
+  padding: 10px 40px;
+  background: #fff !important;
+  color: #BC804d;
+  border: none !important;
+  font-size: 28px;
+  font-family: Sofia Sans Condensed;
+  text-transform: uppercase;
 }
 .btn.btn-md {
   padding: 8px 20px !important;
