@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/pages.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	
 	<!-- clock   -->
@@ -83,60 +84,50 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
+
+    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="display-tc" data-animate-effect="fadeIn">
+            <h1>Registry</h1>
+        </div>
+    </header>    
+    
+	<div id="fh5co-event" class="fh5co-bg">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Cameron &amp; Sierra</h1>
-							<br>
-							<img src="images/fprint.png" alt="Cameron + Sierra"> 
-							<h2>07.30.2024</h2>
-							<h2>"I have found the one whom my soul loves." <br>Song of Solomon 3:4</h2>
-								
-							<div class="tick" data-did-init="handleTickInit">
-							
-								<div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
-							
-									<div class="tick-group">
-
-										<span data-key="label" data-view="text" class="tick-label"></span>
-							
-										<div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
-							
-											<span data-view="flip"></span>
-							
-										</div>
-							
-									</div>
-							
-								</div>
-							
-							</div>
-							
-							<div class="tick-onended-message" style="display:none">
-								<p>Time's up</p>
-							</div>
-								
-							<p><a href="https://www.theknot.com/us/sierra-knight-and-cameron-shaffer-jul-2024/rsvp" class="btn btn-default btn-sm">RSVP</a></p>
-						</div>
-					</div>
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<p class="padding-above">We are truly grateful for your support and generosity. If you wish to contribute to our next chapter, please feel free to use the following links:</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-4 text-center">
+					<a href="https://www.myregistry.com/giftlist/camandsiewedding" target="_blank">
+						<img src="images/registry_icon.png" alt="Registry">
+						<h4>Registry</h4>
+					</a>
+				</div>
+				<div class="col-md-4 text-center">
+					<a href="https://venmo.com/sie3k" target="_blank">
+						<img src="images/venmo_icon.png" alt="Venmo">
+						<h4>Venmo</h4>
+					</a>
+				</div>
+				<div class="col-md-4 text-center">
+					<a href="https://cash.app/$sie3k" target="_blank">
+						<img src="images/cashapp_icon.png" alt="CashApp">
+						<h4>CashApp</h4>
+					</a>
 				</div>
 			</div>
 		</div>
-	</header>
-	
+	</div>
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
-    <!-- clock -->
-	<script src="js/flip.min.js"></script>
-	<script src="js/flip.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
