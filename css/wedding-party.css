@@ -6,9 +6,19 @@
 /* Round the corners of the thumbnail boxes */
 div.thumbnail {
     border-radius: 10px; /* Adjust the radius as needed */
-    background-color: transparent;
+    background-color: rgba(255, 235, 219, 0.9); /* Slightly opaque background for contrast */
     overflow: hidden; /* Ensures the image follows the border radius */
     border: 5px solid #cb804d;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger blur and spread */
+    background-color: rgba(255, 235, 219, 0.9); /* Slightly opaque background */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.thumbnail:hover {
+    transform: scale(1.03); /* Slightly scale up the thumbnail */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
 }
 
 /* Additional styling for the name */
@@ -21,9 +31,17 @@ div.thumbnail {
 .thumbnail .caption p {
     margin-bottom: 10px; /* Adjust bottom margin for paragraphs */
     color: #0c3c48;
+    line-height: 1.6;
 }
 
 .wp-image
 {
     padding-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    br {
+      display: none;
+    }
+  }
+  
