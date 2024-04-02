@@ -20,6 +20,7 @@ div.thumbnail {
 /* Styling for the paragraphs for consistent spacing */
 .thumbnail .caption p {
     margin-bottom: 10px; /* Adjust bottom margin for paragraphs */
+    color: #0c3c48;
 }
 
 .wp-image
