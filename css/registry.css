@@ -1,0 +1,23 @@
+.fh5co-bg .btn {
+    display: inline-block;
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Smaller shadow in normal state */
+    transition: all 0.3s ease;
+}
+
+.fh5co-bg .btn:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); /* Larger, more prominent shadow on hover */
+    transform: translateY(-4px); /* Slightly raise the button */
+}
+
+.fh5co-bg .btn img {
+    margin-bottom: 15px;
+    max-width: 100px; /* Adjust if necessary */
+}
+
+.fh5co-bg .btn h4 {
+    margin: 0;
+    color: #333; /* You can adjust this color based on your theme */
+}
