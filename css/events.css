@@ -1,0 +1,26 @@
+#fh5co-event .event-wrap {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    border-radius: 10px; /* Rounded corners */
+    transition: box-shadow 0.3s ease; /* Smooth transition for interactive feedback */
+}
+
+#fh5co-event .btn-default {
+    border: none; /* Remove the default border */
+    background-color: #ffffff;
+    color: #cb804d;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 1em; /* Appropriate text size */
+    letter-spacing: 1px; /* Spacing for a more upscale look */
+    text-transform: uppercase; /* Uppercase text for stylistic preference */
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 30px; /* Rounded edges for a modern pill shape */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.5s ease; /* Smooth transition for hover effects */
+}
+
+#fh5co-event .btn-default:hover, #fh5co-event .btn-default:focus {
+    background-color: #ffffffe3; /* Slightly darker shade for interactive states */
+    color: #cb804d;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover/focus */
+    text-decoration: none; /* No underlines on hover/focus */
+}

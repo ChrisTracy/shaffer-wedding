@@ -1619,8 +1619,7 @@ form label {
   transition: 0.5s;
 
   padding: 10px 40px;
-  background: #fff !important;
-  color: #BC804d;
+  background: #fff;
   border: none !important;
   font-size: 28px;
   font-family: Sofia Sans Condensed;
