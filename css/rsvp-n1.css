@@ -54,8 +54,8 @@ div.event-wrap {
 }
 
 .form-check-input {
-    width: 40px; /* Example size, adjust as needed */
-    height: 40px; /* Makes the checkbox visually larger */
+    width: 52px; /* Example size, adjust as needed */
+    height: 52px; /* Makes the checkbox visually larger */
     /* No need for negative margin if we are adjusting space with flex properties */
 }
 

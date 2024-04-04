@@ -37,11 +37,17 @@ document.getElementById("guestForm").addEventListener("submit", function(event) 
       try {
         const data = JSON.parse(text); // Manually parse the text to JSON
         console.log(data);
+        // If response is OK, redirect to the thank you page
+        window.location.href = "/rsvp-thank-you.html";
       } catch (error) {
         console.error('Error parsing JSON:', error);
+        // If JSON parsing fails, you might still want to consider the request successful.
+        // Decide based on your application's requirements.
       }
     })
     .catch(error => {
       console.error('Error:', error);
+      // Redirect to the error page if the fetch fails or response is not OK
+      window.location.href = "/about.html";
     });
-  });
+});
