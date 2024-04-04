@@ -1,22 +1,35 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to get URL parameters
-    function getURLParameter(name) {
-        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
-    }
-  
-    // Check for each guest parameter and update the field if present
-    for(let i = 1; i <= 4; i++) {
-        let guestParam = getURLParameter('guest' + i);
-        if(guestParam !== null) {
-            let guestInput = document.getElementById('guest' + i);
-            let guestContainer = document.getElementById('guest' + i + 'Container');
-            guestInput.value = guestParam;
-            guestContainer.style.display = 'flex'; // Show the container in flex layout if that's your original design
-            guestContainer.style.alignItems = 'center'; // Make sure items are aligned in the center
-            guestContainer.style.justifyContent = 'space-between'; // Adjust spacing to match original layout
-        }
-    }
+  // Reuse the existing getURLParameter function
+  function getURLParameter(name) {
+      return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+  }
+
+  // Existing logic to check for each guest parameter and update the field if present
+  for(let i = 1; i <= 6; i++) {
+      let guestParam = getURLParameter('guest' + i);
+      if(guestParam !== null) {
+          let guestInput = document.getElementById('guest' + i);
+          let guestContainer = document.getElementById('guest' + i + 'Container');
+          guestInput.value = guestParam;
+          guestContainer.style.display = 'flex';
+          guestContainer.style.alignItems = 'center';
+          guestContainer.style.justifyContent = 'space-between';
+      }
+  }
+
+  // New logic for "I promise to dance if you play"
+  var dancePromise = getURLParameter('dancePromise');
+  if(dancePromise !== null) {
+      document.getElementById('dancePromise').value = dancePromise;
+  }
+
+  // New logic for "write a note to the couple"
+  var noteToCouple = getURLParameter('noteToCouple');
+  if(noteToCouple !== null) {
+      document.getElementById('noteToCouple').value = noteToCouple;
+  }
 });
+
 
 document.getElementById("guestForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission
