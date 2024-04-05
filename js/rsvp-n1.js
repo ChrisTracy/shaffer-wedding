@@ -34,35 +34,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.getElementById("guestForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    var formData = new FormData(event.target);
-    
-    fetch(event.target.action, {
-      method: 'POST',
-      body: formData,
-    })
-    .then(response => {
-      if (!response.ok) {
-          throw new Error('Network response was not ok');
-      }
-      return response.text(); // Use .text() if the response might not be JSON
-    })
-    .then(text => {
-      try {
-        const data = JSON.parse(text); // Manually parse the text to JSON
-        console.log(data);
-        // If response is OK, redirect to the thank you page
-        window.location.href = "/rsvp-thank-you.html";
-      } catch (error) {
-        console.error('Error parsing JSON:', error);
-        // If JSON parsing fails, you might still want to consider the request successful.
-        // Decide based on your application's requirements.
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      // Redirect to the error page if the fetch fails or response is not OK
-      window.location.href = "/about.html";
-    });
+  event.preventDefault(); // Prevent the default form submission
+
+  var formData = new FormData(event.target);
+
+  // Show the spinner
+  document.getElementById("spinner").style.display = 'block';
+
+  fetch(event.target.action, {
+    method: 'POST',
+    body: formData,
+  })
+  .then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.text(); // Use .text() if the response might not be JSON
+  })
+  .then(text => {
+    // Hide the spinner
+    document.getElementById("spinner").style.display = 'none';
+
+    try {
+      const data = JSON.parse(text); // Manually parse the text to JSON
+      console.log(data);
+      // If response is OK, redirect to the thank you page
+      window.location.href = "/rsvp-thank-you.html";
+    } catch (error) {
+      console.error('Error parsing JSON:', error);
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    // Hide the spinner
+    document.getElementById("spinner").style.display = 'none';
+
+    // Redirect to the error page if the fetch fails or response is not OK
+    window.location.href = "/about.html";
+  });
 });
