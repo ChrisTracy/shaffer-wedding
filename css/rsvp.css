@@ -1,0 +1,61 @@
+#fh5co-event .event-wrap {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    border-radius: 10px; /* Rounded corners */
+    transition: box-shadow 0.3s ease; /* Smooth transition for interactive feedback */
+}
+
+#fh5co-event .btn-default {
+    border: none; /* Remove the default border */
+    background-color: #9D442A;
+    color: #ffff;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 1em; /* Appropriate text size */
+    letter-spacing: 1px; /* Spacing for a more upscale look */
+    text-transform: uppercase; /* Uppercase text for stylistic preference */
+    border: none; /* Remove border for a cleaner look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.5s ease; /* Smooth transition for hover effects */
+}
+
+#fh5co-event .btn-default:hover, #fh5co-event .btn-default:focus {
+    background-color: #9D442A; /* Slightly darker shade for interactive states */
+    color: #ffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover/focus */
+    text-decoration: none; /* No underlines on hover/focus */
+}
+
+div.event-wrap {
+    border: 5px solid #9D442A !important; /* This sets the border size to 2 pixels and color to black */
+    background-color: #FAF9F6;
+    border-radius: 10px !important; /* Rounded edges for a modern pill shape */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger blur and spread */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Ensure the form elements are displayed using Flexbox */
+.form-group {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute space between input and checkbox */
+    padding: 0 10px; /* Add padding to ensure elements do not stick to the edges */
+}
+
+/* Adjust the width of input fields and checkbox containers */
+.form-control {
+    flex-grow: 1; /* Allows input to grow and take available space */
+}
+
+.event-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Optional, depending on your layout needs */
+}
+
+#searchQuery {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  

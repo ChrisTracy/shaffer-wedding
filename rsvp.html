@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
 
     <link rel="stylesheet" href="css/pages.css">
-	<link rel="stylesheet" href="css/rsvp-n1.css">
+	<link rel="stylesheet" href="css/rsvp.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	
 	<!-- clock   -->
@@ -76,6 +76,7 @@
 							<li class="active"><a href="index.html">Home</a></li>
 							<li class="active"><a href="about.html">Our Story</a></li>
 							<li class="active"><a href="events.html">Events</a></li>
+							<li class="active"><a href="rsvp.html">RSVP</a></li>
 							<li class="active"><a href="wedding-party.html">Wedding Party</a></li>
 							<li class="active"><a href="registry.html">Registry</a></li>
 						</ul>
@@ -101,10 +102,10 @@
 					<div class="event-wrap animate-box">
 						<h3>Be Our Guest</h3>
 						<p>Enter your First and Last Name to find your invitation</p>
-						<!-- Added form tag here -->
-						<form id="searchForm" class="form-group mt-4 d-flex align-items-center justify-content-center">
-							<input type="text" class="form-control" id="searchQuery" placeholder="First Name Last Name" name="searchQuery" style="flex: 1;">
-							<button type="submit" class="btn ml-2 search-btn" style="background-color: #a0522d; color: white; border-radius: 20px; padding: 10px 20px;">Search</button>
+						<!-- Modified form structure -->
+						<form id="searchForm" class="form-group mt-4" style="display: flex; flex-direction: column; align-items: center;">
+							<input type="text" class="form-control" id="searchQuery" placeholder="First Name Last Name" name="searchQuery" style="width: 100%; max-width: 800px;">
+							<button type="submit" class="btn search-btn" style="background-color: #a0522d; color: white; border-radius: 20px; padding: 10px 20px; margin-top: 10px; width: auto;">Search</button>
 						</form>
 						<div class="error-message" id="errorMessage"></div>
 					</div>
@@ -112,6 +113,7 @@
 			</div>
 		</div>
 	</div>
+	
 	
     
     
