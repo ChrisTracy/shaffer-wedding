@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
           let guestContainer = document.getElementById('guest' + i + 'Container');
           guestInput.value = guestParam;
           guestContainer.style.display = 'flex';
+          
+          // Make the guest2 container writable and clear the field if it's "plus one"
+          if (i === 2 && guestParam.toLowerCase() === "p1") {
+              guestInput.readOnly = false;
+              guestInput.value = ""; // Clear the field
+          }
       }
   }
 
