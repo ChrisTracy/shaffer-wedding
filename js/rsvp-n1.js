@@ -1,29 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Reuse the existing getURLParameter function
   function getURLParameter(name) {
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
   }
 
-  // Existing logic to check for each guest parameter and update the field if present
+  let anyGuestExists = false; // Flag to check if any guest exists
+
   for(let i = 1; i <= 6; i++) {
       let guestParam = getURLParameter('guest' + i);
       if(guestParam !== null) {
+          anyGuestExists = true; // Set the flag to true if any guest exists
           let guestInput = document.getElementById('guest' + i);
           let guestContainer = document.getElementById('guest' + i + 'Container');
           guestInput.value = guestParam;
           guestContainer.style.display = 'flex';
-          guestContainer.style.alignItems = 'center';
-          guestContainer.style.justifyContent = 'space-between';
       }
   }
 
-  // New logic for "I promise to dance if you play"
+  // Show the conditional sections if any guest exists
+  if(anyGuestExists) {
+      document.getElementById('conditionalSections').style.display = 'block';
+  }
+
   var dancePromise = getURLParameter('dancePromise');
   if(dancePromise !== null) {
       document.getElementById('dancePromise').value = dancePromise;
   }
 
-  // New logic for "write a note to the couple"
   var noteToCouple = getURLParameter('noteToCouple');
   if(noteToCouple !== null) {
       document.getElementById('noteToCouple').value = noteToCouple;
