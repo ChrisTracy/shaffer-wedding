@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
           guestInput.value = guestParam;
           guestContainer.style.display = 'flex';
           
-          // Make the guest2 container writable and clear the field if it's "plus one"
-          if (i === 2 && guestParam.toLowerCase() === "p1") {
+          // Make the guest container writable and clear the field if it's "p1"
+          if (guestParam.toLowerCase() === "p1") {
               guestInput.readOnly = false;
               guestInput.value = ""; // Clear the field
           }
