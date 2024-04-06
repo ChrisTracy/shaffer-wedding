@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
               guestInput.value = ""; // Clear the field
           }
       }
+
+      // Check the attending checkbox based on the URL parameter
+      let attendingParam = getURLParameter('attending' + i);
+      if(attendingParam === "1") {
+          let attendingCheckbox = document.getElementById('attending' + i);
+          attendingCheckbox.checked = true;
+      }
   }
 
   // Show the conditional sections if any guest exists
